@@ -1,5 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
+using Service_Template.Settings;
 
 namespace Service_Template.Controllers
 {
@@ -7,36 +8,50 @@ namespace Service_Template.Controllers
     [ApiController]
     public class LoginController : ControllerBase
     {
+        private readonly IHttpClientFactory _httpClientFactory;
+        
+        private readonly GitSecrets _gitSecrets;
+
+        public LoginController(IHttpClientFactory httpClientFactory, IOptions<GitSecrets> gitSecret)
+        {
+            _httpClientFactory = httpClientFactory;
+            
+            _gitSecrets = gitSecret.Value;
+        }
+        
         // GET: api/<LoginController>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
-        // GET api/<LoginController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/<LoginController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<IActionResult> Login([FromBody] string code)
         {
-        }
+            string url = "https://github.com/login/oauth/access_token";
+            string settings = "?client_id=" + _gitSecrets.Client + "&client_secret=" + _gitSecrets.Secret + "&code=" + code;
+            
+            System.Console.WriteLine(url);
+            System.Console.WriteLine(settings);
+            
+            var content = new FormUrlEncodedContent(new[]
+            {
+                new KeyValuePair<string, string>("accepts", "application/json"),
+            });
+            
+            var client = _httpClientFactory.CreateClient();
 
-        // PUT api/<LoginController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
+            try
+            {
+                var response = await client.PostAsync(url + settings, content);
 
-        // DELETE api/<LoginController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+                // Ensure the response is successful
+                response.EnsureSuccessStatusCode();
+
+                // Read the response content as a string
+                var responseData = await response.Content.ReadAsStringAsync();
+                
+                return Ok(responseData);
+            }
+            catch (HttpRequestException e)
+            {
+                return StatusCode(500, $"Error fetching data: {e.Message}");
+            }
         }
     }
 }

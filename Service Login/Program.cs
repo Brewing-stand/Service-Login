@@ -1,5 +1,8 @@
+using Service_Template.Settings;
+
 var builder = WebApplication.CreateBuilder(args);
 var corsPolicy = "CorsPolicy";
+
 
 // Add services to the container.
 
@@ -7,6 +10,11 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddHttpClient();
+
+// SECRETS
+builder.Services.Configure<GitSecrets>(builder.Configuration.GetSection("GitSecrets"));
 
 // CORS
 builder.Services.AddCors(options =>
