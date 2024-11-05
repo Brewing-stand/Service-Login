@@ -1,3 +1,4 @@
+using Service_Template.Repositories;
 using Service_Template.Settings;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +16,9 @@ builder.Services.AddHttpClient();
 
 // SECRETS
 builder.Services.Configure<GitSecrets>(builder.Configuration.GetSection("GitSecrets"));
+
+// Services
+builder.Services.AddScoped<IGitLogin, GitLogin>();
 
 // CORS
 builder.Services.AddCors(options =>

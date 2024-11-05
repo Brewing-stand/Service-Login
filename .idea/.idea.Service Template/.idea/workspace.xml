@@ -11,26 +11,63 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04f36c66-809b-45c7-9285-f246ac1a2513" name="Changes" comment="Init 2">
-      <change afterPath="$PROJECT_DIR$/Service Login/Settings/GitSecrets.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Service Template/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Service Template/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service Login/Controllers/LoginController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Service Login/Controllers/LoginController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service Login/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Service Login/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service Login/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/Service Login/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service Login/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Service Login/appsettings.json" afterDir="false" />
-    </list>
+    <list default="true" id="04f36c66-809b-45c7-9285-f246ac1a2513" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="CleanUp" />
+                    <option name="lastUsedInstant" value="1730814704" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1730814703" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/c2a442982e736e17ae6bcadbfd8ccba278ee1be6/src/Mvc/Mvc.Core/src/Infrastructure/ResourceInvoker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/c2a442982e736e17ae6bcadbfd8ccba278ee1be6/src/Mvc/Mvc.Core/src/MvcCoreDiagnosticListenerExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/81cabf2857a01351e5ab578947c7403a5b128ad1/src/libraries/System.Diagnostics.DiagnosticSource/src/System/Diagnostics/DiagnosticListener.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/81cabf2857a01351e5ab578947c7403a5b128ad1/src/libraries/System.Diagnostics.DiagnosticSource/src/System/Diagnostics/DiagnosticSourceEventSource.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/81cabf2857a01351e5ab578947c7403a5b128ad1/src/libraries/System.Private.CoreLib/src/System/String.Comparison.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/81cabf2857a01351e5ab578947c7403a5b128ad1/src/libraries/System.Private.CoreLib/src/System/String.Manipulation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/81cabf2857a01351e5ab578947c7403a5b128ad1/src/libraries/System.Private.CoreLib/src/System/String.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/bramv/OneDrive/Documenten/fontys/Semester 6 (advanced software)/Personal code/back-end/Service-Login/Service Login/Controllers/LoginController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/bramv/OneDrive/Documenten/fontys/Semester 6 (advanced software)/Personal code/back-end/Service-Login/Service Login/Controllers/LoginController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/bramv/OneDrive/Documenten/fontys/Semester 6 (advanced software)/Personal code/back-end/Service-Login/Service Login/Controllers/LoginController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/bramv/OneDrive/Documenten/fontys/Semester 6 (advanced software)/Personal code/back-end/Service-Login/Service Login/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/bramv/OneDrive/Documenten/fontys/Semester 6 (advanced software)/Personal code/back-end/Service-Login/Service Login/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/bramv/OneDrive/Documenten/fontys/Semester 6 (advanced software)/Personal code/back-end/Service-Login/Service Login/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/bramv/OneDrive/Documenten/fontys/Semester 6 (advanced software)/Personal code/back-end/Service-Login/Service Login/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/bramv/OneDrive/Documenten/fontys/Semester 6 (advanced software)/Personal code/back-end/Service-Login/Service Login/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Service Login/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/bramv/OneDrive/Documenten/fontys/Semester 6 (advanced software)/Personal code/back-end/Service-Login/Service Login/appsettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/bramv/OneDrive/Documenten/fontys/Semester 6 (advanced software)/Personal code/back-end/Service-Login/Service Login/appsettings.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -46,7 +83,7 @@
   "keyToString": {
     ".NET Launch Settings Profile.Service Template: http.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "CleanUp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -145,7 +182,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730802316214</updated>
-      <workItem from="1730802316776" duration="4446000" />
+      <workItem from="1730802316776" duration="12726000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -163,7 +200,31 @@
       <option name="project" value="LOCAL" />
       <updated>1730802833067</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Created Login request handler using git and added Appsettings for Git Client and Secret">
+      <option name="closed" value="true" />
+      <created>1730807032128</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730807032128</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Used the template structure and created tests for the parser">
+      <option name="closed" value="true" />
+      <created>1730821820252</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730821820252</updated>
+    </task>
+    <task id="LOCAL-00005" summary="updated gitignore">
+      <option name="closed" value="true" />
+      <created>1730822593572</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730822593572</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,10 +232,24 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Init" />
     <MESSAGE value="Init 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init 2" />
+    <MESSAGE value="Created Login request handler using git and added Appsettings for Git Client and Secret" />
+    <MESSAGE value="Used the template structure and created tests for the parser" />
+    <MESSAGE value="updated gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated gitignore" />
   </component>
 </project>
