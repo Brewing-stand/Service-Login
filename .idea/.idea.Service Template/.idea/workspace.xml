@@ -11,13 +11,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04f36c66-809b-45c7-9285-f246ac1a2513" name="Changes" comment="Init 2">
-      <change afterPath="$PROJECT_DIR$/Service Login/Settings/GitSecrets.cs" afterDir="false" />
+    <list default="true" id="04f36c66-809b-45c7-9285-f246ac1a2513" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Service Template/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Service Template/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Service Login/Controllers/LoginController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Service Login/Controllers/LoginController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Service Login/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Service Login/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service Login/Repositories/IUserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Service Login/Repositories/IGitLogin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service Login/Repositories/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Service Login/Repositories/GitLogin.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Service Login/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/Service Login/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service Login/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Service Login/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,12 +25,47 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="CleanUp" />
+                    <option name="lastUsedInstant" value="1730814704" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1730814703" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Users/bramv/OneDrive/Documenten/fontys/Semester 6 (advanced software)/Personal code/back-end/Service-Login/Service Login/Controllers/LoginController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/bramv/OneDrive/Documenten/fontys/Semester 6 (advanced software)/Personal code/back-end/Service-Login/Service Login/Controllers/LoginController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/bramv/OneDrive/Documenten/fontys/Semester 6 (advanced software)/Personal code/back-end/Service-Login/Service Login/Controllers/LoginController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/bramv/OneDrive/Documenten/fontys/Semester 6 (advanced software)/Personal code/back-end/Service-Login/Service Login/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/bramv/OneDrive/Documenten/fontys/Semester 6 (advanced software)/Personal code/back-end/Service-Login/Service Login/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/bramv/OneDrive/Documenten/fontys/Semester 6 (advanced software)/Personal code/back-end/Service-Login/Service Login/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Service Login/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/bramv/OneDrive/Documenten/fontys/Semester 6 (advanced software)/Personal code/back-end/Service-Login/Service Login/appsettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/bramv/OneDrive/Documenten/fontys/Semester 6 (advanced software)/Personal code/back-end/Service-Login/Service Login/appsettings.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -44,9 +79,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Launch Settings Profile.Service Template: http.executor": "Run",
+    ".NET Launch Settings Profile.Service Template: http.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "CleanUp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -145,7 +180,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730802316214</updated>
-      <workItem from="1730802316776" duration="4446000" />
+      <workItem from="1730802316776" duration="6064000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -163,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730802833067</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Created Login request handler using git and added Appsettings for Git Client and Secret">
+      <option name="closed" value="true" />
+      <created>1730807032128</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730807032128</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +218,26 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Init" />
     <MESSAGE value="Init 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init 2" />
+    <MESSAGE value="Created Login request handler using git and added Appsettings for Git Client and Secret" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Login request handler using git and added Appsettings for Git Client and Secret" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Service Login/Controllers/LoginController.cs</url>
+          <line>21</line>
+          <properties documentPath="C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\Service Login\Controllers\LoginController.cs" containingFunctionPresentation="Method 'Login'">
+            <startOffsets>
+              <option value="598" />
+            </startOffsets>
+            <endOffsets>
+              <option value="599" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
