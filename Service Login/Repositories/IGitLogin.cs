@@ -1,8 +1,9 @@
-﻿using Service_Template.Models;
+﻿using FluentResults;
+using Service_Template.Models;
 
 namespace Service_Template.Repositories;
 
 public interface IGitLogin
 {
-    Task<LoginResult> Login(string code);
+    public Task<Result<string>> Login(string code);
 }
