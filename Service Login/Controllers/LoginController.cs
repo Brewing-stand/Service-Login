@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using FluentResults;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Service_Template.Repositories;
 using Service_Template.Settings;
@@ -20,16 +21,25 @@ namespace Service_Template.Controllers
         [HttpGet("{code}")]
         public async Task<IActionResult> Login([FromRoute] string code)
         {
-            var result = await _gitLogin.Login(code);
+            var tokenResult = await _gitLogin.Login(code);
 
-            if (result.IsFailed)
+            if (tokenResult.IsFailed)
             {
                 return Unauthorized();
             }
             
-            SetAuthCookie("access_token",result.Value);
+            // Retrieve GitHub user data using the access token
+            Result<string> userDataResult = await _gitLogin.GetUserData(tokenResult.Value);
+        
+            // Check if userdata
+            if (userDataResult.IsFailed)
+            {
+                return NotFound("Failed to retrieve user data");
+            }
+            
+            SetAuthCookie("access_token",tokenResult.Value);
 
-            return Ok("Login successful");
+            return Ok(userDataResult.Value);
         }
 
         private void SetAuthCookie(string key, string token)
