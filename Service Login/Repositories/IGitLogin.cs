@@ -1,5 +1,4 @@
 ﻿using FluentResults;
-using Service_Template.Models;
 
 namespace Service_Template.Repositories;
 
