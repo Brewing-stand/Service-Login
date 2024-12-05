@@ -1,6 +1,6 @@
 ﻿using FluentResults;
 
-namespace Service_Template.Repositories;
+namespace Service_User.Repositories;
 
 public interface IGitLogin
 {

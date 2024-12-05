@@ -24,7 +24,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Service Login\Service Login.csproj" />
+      <ProjectReference Include="..\Service User\Service User.csproj" />
     </ItemGroup>
 
 </Project>

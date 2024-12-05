@@ -1,10 +1,11 @@
 ﻿using System.Net.Http.Headers;
 using System.Text.Json;
 using FluentResults;
+using Service_User.Settings;
 
-namespace Service_Template.Repositories;
+namespace Service_User.Repositories;
 using Microsoft.Extensions.Options;
-using Service_Template.Settings;
+using Service_User.Settings;
 
 public class GitLogin : IGitLogin
 {

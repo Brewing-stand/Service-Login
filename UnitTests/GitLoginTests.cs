@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
 using Moq.Protected;
 using NUnit.Framework;
-using Service_Template.Repositories;
-using Service_Template.Settings;
+using Service_User.Repositories;
+using Service_User.Settings;
 
 [TestFixture]
 public class GitLoginTests

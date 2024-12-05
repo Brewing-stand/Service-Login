@@ -1,10 +1,10 @@
 ﻿using FluentResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
-using Service_Template.Repositories;
-using Service_Template.Settings;
+using Service_User.Settings;
+using Service_User.Repositories;
 
-namespace Service_Template.Controllers
+namespace Service_User.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
