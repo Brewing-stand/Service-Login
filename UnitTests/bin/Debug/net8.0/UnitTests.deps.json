@@ -1854,7 +1854,7 @@
           }
         }
       },
-      "Service Login/1.0.0": {
+      "Service User/1.0.0": {
         "dependencies": {
           "FluentResults": "3.16.0",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.21.0",
@@ -1862,7 +1862,7 @@
           "Swashbuckle.AspNetCore": "6.6.2"
         },
         "runtime": {
-          "Service Login.dll": {
+          "Service User.dll": {
             "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -2842,7 +2842,7 @@
       "path": "system.windows.extensions/7.0.0",
       "hashPath": "system.windows.extensions.7.0.0.nupkg.sha512"
     },
-    "Service Login/1.0.0": {
+    "Service User/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
