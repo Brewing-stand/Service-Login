@@ -4,14 +4,14 @@
     "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-Login\\UnitTests\\UnitTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-Login\\Service Login\\Service Login.csproj": {
+    "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-Login\\Service User\\Service User.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-Login\\Service Login\\Service Login.csproj",
-        "projectName": "Service Login",
-        "projectPath": "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-Login\\Service Login\\Service Login.csproj",
+        "projectUniqueName": "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-Login\\Service User\\Service User.csproj",
+        "projectName": "Service User",
+        "projectPath": "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-Login\\Service User\\Service User.csproj",
         "packagesPath": "C:\\Users\\bramv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-Login\\Service Login\\obj\\",
+        "outputPath": "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-Login\\Service User\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bramv\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -35,12 +35,22 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "FluentResults": {
+              "target": "Package",
+              "version": "[3.16.0, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.21.0, )"
@@ -65,6 +75,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -73,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -102,8 +130,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-Login\\Service Login\\Service Login.csproj": {
-                "projectPath": "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-Login\\Service Login\\Service Login.csproj"
+              "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-Login\\Service User\\Service User.csproj": {
+                "projectPath": "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-Login\\Service User\\Service User.csproj"
               }
             }
           }
@@ -112,12 +140,22 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "FluentResults": {
+              "target": "Package",
+              "version": "[3.16.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.8.0, )"
@@ -154,12 +192,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

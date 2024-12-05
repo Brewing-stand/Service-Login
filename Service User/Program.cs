@@ -1,5 +1,5 @@
-using Service_Template.Repositories;
-using Service_Template.Settings;
+using Service_User.Repositories;
+using Service_User.Settings;
 
 var builder = WebApplication.CreateBuilder(args);
 var corsPolicy = "CorsPolicy";

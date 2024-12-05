@@ -1,4 +1,4 @@
-﻿namespace Service_Template.Settings;
+﻿namespace Service_User.Settings;
 
 public class GitSecrets
 { 

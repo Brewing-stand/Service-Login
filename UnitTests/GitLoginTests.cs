@@ -1,76 +1,75 @@
-﻿using Microsoft.Extensions.Options;
-using Moq.Protected;
-
-namespace UnitTests;
-
-using System;
-using System.Collections.Generic;
-using System.Net;
+﻿using FluentResults;
+using Moq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Moq;
+using Microsoft.Extensions.Options;
+using Moq.Protected;
 using NUnit.Framework;
-using Service_Template.Models;
-using Service_Template.Repositories;
-using Service_Template.Settings;
+using Service_User.Repositories;
+using Service_User.Settings;
 
 [TestFixture]
-    public class GitLoginTests
+public class GitLoginTests
+{
+    private Mock<IHttpClientFactory> _httpClientFactoryMock;
+    private Mock<HttpMessageHandler> _handlerMock;
+    private GitLogin _gitLogin;
+
+    [SetUp]
+    public void Setup()
     {
-        private Mock<IHttpClientFactory> _httpClientFactoryMock;
-        private Mock<HttpMessageHandler> _httpMessageHandlerMock;
-        private GitLogin _gitLogin;
-        private GitSecrets _gitSecrets;
+        _httpClientFactoryMock = new Mock<IHttpClientFactory>();
+        _handlerMock = new Mock<HttpMessageHandler>();
+        
+        _httpClientFactoryMock.Setup(_ => _.CreateClient(It.IsAny<string>())).Returns(new HttpClient(_handlerMock.Object));
 
-        [SetUp]
-        public void Setup()
-        {
-            // Mock HttpClient
-            _httpMessageHandlerMock = new Mock<HttpMessageHandler>();
-            var httpClient = new HttpClient(_httpMessageHandlerMock.Object);
-
-            _httpClientFactoryMock = new Mock<IHttpClientFactory>();
-            _httpClientFactoryMock.Setup(factory => factory.CreateClient(It.IsAny<string>())).Returns(httpClient);
-
-            // Mock GitSecrets
-            _gitSecrets = new GitSecrets
-            {
-                Client = "test_client_id",
-                Secret = "test_client_secret"
-            };
-
-            // Mock IOptions<GitSecrets>
-            var gitSecretsOptions = new Mock<IOptions<GitSecrets>>();
-            gitSecretsOptions.Setup(opt => opt.Value).Returns(_gitSecrets);
-
-            // Create instance of GitLogin
-            _gitLogin = new GitLogin(_httpClientFactoryMock.Object, gitSecretsOptions.Object);
-        }
-
-        [Test]
-        public void ParseTokenResponse_ValidResponse_ReturnsTokenJson()
-        {
-            // Arrange
-            var responseData = "access_token=valid_access_token&scope=user&token_type=bearer";
-
-            // Act
-            var token = _gitLogin.ParseTokenResponse(responseData);
-
-            // Assert
-            Assert.IsNotNull(token);
-            StringAssert.Contains("valid_access_token", token);
-        }
-
-        [Test]
-        public void ParseTokenResponse_InvalidResponse_ReturnsNull()
-        {
-            // Arrange
-            var responseData = "";
-
-            // Act
-            var token = _gitLogin.ParseTokenResponse(responseData);
-
-            // Assert
-            Assert.IsNull(token);
-        }
+        var gitSecrets = new GitSecrets { Client = "client_id", Secret = "client_secret" };
+        var options = Options.Create(gitSecrets);
+        _gitLogin = new GitLogin(_httpClientFactoryMock.Object, options);
     }
+
+    [Test]
+    public async Task Login_ShouldReturnSuccess_WhenTokenIsValid()
+    {
+        // Arrange
+        var responseData = "access_token=valid_token&scope=repo&token_type=bearer";
+        _handlerMock.SetupRequestMessage(HttpMethod.Post, "https://github.com/login/oauth/access_token", responseData, 200);
+
+        // Act
+        var result = await _gitLogin.Login("auth_code");
+
+        // Assert
+        Assert.IsTrue(result.IsSuccess);
+        Assert.AreEqual("valid_token", result.Value);
+    }
+
+    [Test]
+    public async Task Login_ShouldReturnFailure_WhenTokenIsNotFound()
+    {
+        // Arrange
+        var responseData = "error=invalid_grant";
+        _handlerMock.SetupRequestMessage(HttpMethod.Post, "https://github.com/login/oauth/access_token", responseData, 400);
+
+        // Act
+        var result = await _gitLogin.Login("auth_code");
+
+        // Assert
+        Assert.IsFalse(result.IsSuccess);
+        Assert.AreEqual("Login unsuccessful", result.Errors[0].Message);
+    }
+}
+
+public static class HttpClientExtensions
+{
+    public static void SetupRequestMessage(this Mock<HttpMessageHandler> handlerMock, HttpMethod method, string url, string responseData, int statusCode)
+    {
+        handlerMock
+            .Protected()
+            .Setup<Task<HttpResponseMessage>>("SendAsync", ItExpr.Is<HttpRequestMessage>(r => r.Method == method && r.RequestUri.ToString().Contains(url)), It.IsAny<CancellationToken>())
+            .ReturnsAsync(new HttpResponseMessage
+            {
+                StatusCode = (System.Net.HttpStatusCode)statusCode,
+                Content = new StringContent(responseData)
+            });
+    }
+}
