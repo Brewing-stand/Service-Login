@@ -1,15 +1,13 @@
-﻿using Moq;
-using System.Net.Http;
-using Microsoft.Extensions.Options;
-using NUnit.Framework;
-using Service_User.Repositories;
-using Service_User.Settings;
+﻿using Microsoft.Extensions.Options;
+using Moq;
+using Service_Login.Repositories;
+using Service_Login.Settings;
 
 [TestFixture]
-public class GitLoginTests
+public class GitLoginRepositoryTests
 {
     private Mock<IHttpClientFactory> _httpClientFactoryMock;
-    private GitLogin _gitLogin;
+    private GitLoginRepository _gitLoginRepository;
 
     [SetUp]
     public void Setup()
@@ -19,7 +17,7 @@ public class GitLoginTests
         var gitSecrets = new GitSecrets { Client = "client_id", Secret = "client_secret" };
         var options = Options.Create(gitSecrets);
 
-        _gitLogin = new GitLogin(_httpClientFactoryMock.Object, options);
+        _gitLoginRepository = new GitLoginRepository(_httpClientFactoryMock.Object, options);
     }
 
     [Test]
