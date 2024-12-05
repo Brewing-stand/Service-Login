@@ -609,3 +609,4 @@ C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Persona
 C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\obj\Debug\net8.0\UnitTests.pdb
 C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\obj\Debug\net8.0\UnitTests.genruntimeconfig.cache
 C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\obj\Debug\net8.0\ref\UnitTests.dll
+C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\bin\Debug\net8.0\FluentResults.dll
