@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TR4gAS01UZI=",
+  "dgSpecHash": "q75nwV2g/aY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-User\\UnitTests\\UnitTests.csproj",
+  "projectFilePath": "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-Login\\UnitTests\\UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bramv\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\bramv\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
