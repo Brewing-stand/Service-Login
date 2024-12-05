@@ -311,11 +311,8 @@ C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Persona
 C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\bin\Debug\net8.0\nunit.engine.api.dll
 C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\bin\Debug\net8.0\nunit.engine.core.dll
 C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\bin\Debug\net8.0\testcentric.engine.metadata.dll
-C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\bin\Debug\net8.0\Service Login.deps.json
-C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\bin\Debug\net8.0\Service Login.runtimeconfig.json
 C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\bin\Debug\net8.0\appsettings.json
-C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\bin\Debug\net8.0\Service Login.exe
 C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\bin\Debug\net8.0\UnitTests.deps.json
 C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\bin\Debug\net8.0\UnitTests.runtimeconfig.json
 C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\bin\Debug\net8.0\UnitTests.dll
@@ -595,8 +592,6 @@ C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Persona
 C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
-C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\bin\Debug\net8.0\Service Login.dll
-C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\bin\Debug\net8.0\Service Login.pdb
 C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\obj\Debug\net8.0\UnitTests.csproj.AssemblyReference.cache
 C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\obj\Debug\net8.0\UnitTests.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\obj\Debug\net8.0\UnitTests.AssemblyInfoInputs.cache
@@ -610,3 +605,9 @@ C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Persona
 C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\obj\Debug\net8.0\UnitTests.genruntimeconfig.cache
 C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\obj\Debug\net8.0\ref\UnitTests.dll
 C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\bin\Debug\net8.0\FluentResults.dll
+C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\bin\Debug\net8.0\Service User.runtimeconfig.json
+C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\bin\Debug\net8.0\Service User.staticwebassets.endpoints.json
+C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\bin\Debug\net8.0\Service User.deps.json
+C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\bin\Debug\net8.0\Service User.exe
+C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\bin\Debug\net8.0\Service User.dll
+C:\Users\bramv\OneDrive\Documenten\fontys\Semester 6 (advanced software)\Personal code\back-end\Service-Login\UnitTests\bin\Debug\net8.0\Service User.pdb

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-Login\\UnitTests\\UnitTests.csproj": {}
+    "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-User\\UnitTests\\UnitTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-Login\\Service User\\Service User.csproj": {
+    "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-User\\Service User\\Service User.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-Login\\Service User\\Service User.csproj",
+        "projectUniqueName": "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-User\\Service User\\Service User.csproj",
         "projectName": "Service User",
-        "projectPath": "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-Login\\Service User\\Service User.csproj",
+        "projectPath": "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-User\\Service User\\Service User.csproj",
         "packagesPath": "C:\\Users\\bramv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-Login\\Service User\\obj\\",
+        "outputPath": "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-User\\Service User\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bramv\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -105,14 +105,14 @@
         }
       }
     },
-    "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-Login\\UnitTests\\UnitTests.csproj": {
+    "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-User\\UnitTests\\UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-Login\\UnitTests\\UnitTests.csproj",
+        "projectUniqueName": "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-User\\UnitTests\\UnitTests.csproj",
         "projectName": "UnitTests",
-        "projectPath": "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-Login\\UnitTests\\UnitTests.csproj",
+        "projectPath": "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-User\\UnitTests\\UnitTests.csproj",
         "packagesPath": "C:\\Users\\bramv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-Login\\UnitTests\\obj\\",
+        "outputPath": "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-User\\UnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bramv\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -130,8 +130,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-Login\\Service User\\Service User.csproj": {
-                "projectPath": "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-Login\\Service User\\Service User.csproj"
+              "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-User\\Service User\\Service User.csproj": {
+                "projectPath": "C:\\Users\\bramv\\OneDrive\\Documenten\\fontys\\Semester 6 (advanced software)\\Personal code\\back-end\\Service-User\\Service User\\Service User.csproj"
               }
             }
           }
