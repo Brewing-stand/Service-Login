@@ -1,8 +1,7 @@
 ﻿namespace Service_Login.Models;
 
-public class User
+public class GitUserData
 {
-    public Guid Id { get; set; }
     public Guid GitId { get; set; }
     public string Username { get; set; }
 }

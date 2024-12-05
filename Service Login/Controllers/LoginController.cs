@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Service_Login.Models;
 using Service_Login.Repositories;
 
 namespace Service_Login.Controllers
@@ -9,10 +10,13 @@ namespace Service_Login.Controllers
     {
         private readonly IGitLoginRepository _gitLoginRepository;
         private readonly ITokenService _tokenService;
+        private readonly IUserServiceRepository _userServiceRepository;
 
-        public LoginController(IGitLoginRepository gitLoginRepository)
+        public LoginController(IGitLoginRepository gitLoginRepository, IUserServiceRepository userServiceRepository, ITokenService tokenService)
         {
             _gitLoginRepository = gitLoginRepository;
+            _userServiceRepository = userServiceRepository;
+            _tokenService = tokenService;
         }
 
         // GET: api/Login/{code}
@@ -22,15 +26,28 @@ namespace Service_Login.Controllers
             // Step 1: Retrieve GitHub access token
             var tokenResult = await _gitLoginRepository.Login(code);
             if (tokenResult.IsFailed)
-                return Unauthorized("GitHub authentication failed");
+                return Unauthorized(tokenResult.Errors.FirstOrDefault());
 
             // Step 2: Retrieve GitHub user data
             var userDataResult = await _gitLoginRepository.GetUserData(tokenResult.Value);
             if (userDataResult.IsFailed)
-                return NotFound("Failed to retrieve GitHub user data");
+                return NotFound(userDataResult.Errors.FirstOrDefault());
 
-            // Step 3: Return GitHub user data
-            return Ok(userDataResult.Value); // Return the user data as response
+            var gitUserData = userDataResult.Value;
+
+            // Step 3: Call UserService to check or create the user
+            var userResult = await _userServiceRepository.CheckOrCreateUserAsync(gitUserData);
+            if (userResult.IsFailed)
+            {
+                // Log or use the detailed error messages in userResult.Errors
+                return BadRequest(new
+                {
+                    Message = "Error checking or creating user.",
+                    Details = userResult.Errors.Select(e => e.Message) // Return all error messages
+                });
+            }
+
+            return Ok(userResult);
         }
     }
 }

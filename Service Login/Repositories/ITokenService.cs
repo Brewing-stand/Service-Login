@@ -1,6 +1,8 @@
-﻿namespace Service_Login.Repositories;
+﻿using Service_Login.Models;
+
+namespace Service_Login.Repositories;
 
 public interface ITokenService
 {
-    string GenerateJwt(string userId, string username);
+    string GenerateToken(User user);
 }

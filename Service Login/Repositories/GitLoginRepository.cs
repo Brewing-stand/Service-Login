@@ -1,6 +1,8 @@
 ﻿using System.Net.Http.Headers;
+using System.Text.Json;
 using FluentResults;
 using Microsoft.Extensions.Options;
+using Service_Login.Models;
 using Service_Login.Settings;
 
 namespace Service_Login.Repositories
@@ -56,14 +58,14 @@ namespace Service_Login.Repositories
             catch (Exception ex)
             {
                 Console.WriteLine(ex);
-                return Result.Fail("Failed to retrieve access token");
+                return Result.Fail("Failed to retrieve access token: " + ex);
             }
         }
 
-        public async Task<Result<string>> GetUserData(string accessToken)
+        public async Task<Result<GitUserData>> GetUserData(string accessToken)
         {
             if (string.IsNullOrEmpty(accessToken))
-                return Result.Fail("Access token is required");
+                return Result.Fail<GitUserData>("Access token is required");
 
             const string url = "https://api.github.com/user";
             var client = _httpClientFactory.CreateClient();
@@ -77,12 +79,16 @@ namespace Service_Login.Repositories
                 response.EnsureSuccessStatusCode();
 
                 var userData = await response.Content.ReadAsStringAsync();
-                return Result.Ok(userData);
+
+                // Assuming you want to deserialize the response into a GitUserData object
+                var gitUserData = DeserializeGitUserData(userData);
+
+                return Result.Ok(gitUserData);
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex);
-                return Result.Fail("Failed to retrieve user data");
+                return Result.Fail<GitUserData>("Failed to retrieve user data: " + ex);
             }
         }
 
@@ -91,6 +97,11 @@ namespace Service_Login.Repositories
             // Parse the query string response and extract the access token
             var tokenData = System.Web.HttpUtility.ParseQueryString(responseData);
             return tokenData["access_token"];
+        }
+        
+        private static GitUserData DeserializeGitUserData(string userData)
+        {
+            throw new NotImplementedException();
         }
     }
 }
