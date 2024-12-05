@@ -1,5 +1,5 @@
-using Service_User.Repositories;
-using Service_User.Settings;
+using Service_Login.Repositories;
+using Service_Login.Settings;
 
 var builder = WebApplication.CreateBuilder(args);
 var corsPolicy = "CorsPolicy";
@@ -18,7 +18,7 @@ builder.Services.AddHttpClient();
 builder.Services.Configure<GitSecrets>(builder.Configuration.GetSection("GitSecrets"));
 
 // Services
-builder.Services.AddScoped<IGitLogin, GitLogin>();
+builder.Services.AddScoped<IGitLoginRepository, GitLoginRepository>();
 
 // CORS
 builder.Services.AddCors(options =>
