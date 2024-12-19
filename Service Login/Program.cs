@@ -1,4 +1,6 @@
+using Refit;
 using Service_Login.Repositories;
+using Service_Login.Services;
 using Service_Login.Settings;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,13 +14,23 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddHttpClient();
-
-// SECRETS
+// Settings
 builder.Services.Configure<GitSecrets>(builder.Configuration.GetSection("GitSecrets"));
 
+// Refit
+builder.Services.AddRefitClient<IGitHubAuthApi>()
+    .ConfigureHttpClient(c => c.BaseAddress = new Uri("https://github.com"));
+
+builder.Services.AddRefitClient<IGitHubServiceApi>()
+    .ConfigureHttpClient(c => c.BaseAddress = new Uri("https://api.github.com"));
+
+builder.Services.AddRefitClient<IUserServiceApi>()
+    .ConfigureHttpClient(c => c.BaseAddress = new Uri(builder.Configuration["UserService:Url"]));
+
 // Services
+builder.Services.AddScoped<IUserServiceRepository, UserServiceRepository>();
 builder.Services.AddScoped<IGitLoginRepository, GitLoginRepository>();
+builder.Services.AddScoped<ITokenService, TokenService>();
 
 // CORS
 builder.Services.AddCors(options =>
