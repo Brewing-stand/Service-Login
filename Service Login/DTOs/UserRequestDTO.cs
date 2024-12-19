@@ -1,8 +1,7 @@
-namespace Service_Login.Models;
+﻿namespace Service_Login.DTOs;
 
-public class User
+public class UserRequestDTO
 {
-    public Guid Id { get; set; }
     public long GitId { get; set; }
     public string Username { get; set; }
     public string Avatar { get; set; }

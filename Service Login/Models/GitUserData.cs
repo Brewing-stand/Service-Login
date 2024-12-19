@@ -2,6 +2,8 @@
 
 public class GitUserData
 {
-    public Guid GitId { get; set; }
-    public string Username { get; set; }
+    public long  id  { get; set; }
+    public string login  { get; set; }
+    public string avatar_url  { get; set; }
 }
+

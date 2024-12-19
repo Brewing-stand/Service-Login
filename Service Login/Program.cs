@@ -18,6 +18,12 @@ builder.Services.AddSwaggerGen();
 builder.Services.Configure<GitSecrets>(builder.Configuration.GetSection("GitSecrets"));
 
 // Refit
+builder.Services.AddRefitClient<IGitHubAuthApi>()
+    .ConfigureHttpClient(c => c.BaseAddress = new Uri("https://github.com"));
+
+builder.Services.AddRefitClient<IGitHubServiceApi>()
+    .ConfigureHttpClient(c => c.BaseAddress = new Uri("https://api.github.com"));
+
 builder.Services.AddRefitClient<IUserServiceApi>()
     .ConfigureHttpClient(c => c.BaseAddress = new Uri(builder.Configuration["UserService:Url"]));
 
