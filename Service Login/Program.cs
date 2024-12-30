@@ -1,4 +1,6 @@
+using Microsoft.EntityFrameworkCore;
 using Refit;
+using Service_Login.Context;
 using Service_Login.Repositories;
 using Service_Login.Services;
 using Service_Login.Settings;
@@ -24,11 +26,12 @@ builder.Services.AddRefitClient<IGitHubAuthApi>()
 builder.Services.AddRefitClient<IGitHubServiceApi>()
     .ConfigureHttpClient(c => c.BaseAddress = new Uri("https://api.github.com"));
 
-builder.Services.AddRefitClient<IUserServiceApi>()
-    .ConfigureHttpClient(c => c.BaseAddress = new Uri(builder.Configuration["UserService:Url"]));
+// Database
+builder.Services.AddDbContext<UserDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("PostgresSQL_DB")));
 
 // Services
-builder.Services.AddScoped<IUserServiceRepository, UserServiceRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IGitLoginRepository, GitLoginRepository>();
 builder.Services.AddScoped<ITokenService, TokenService>();
 

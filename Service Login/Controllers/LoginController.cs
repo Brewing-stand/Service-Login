@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Service_Login.DTOs;
 using Service_Login.Models;
 using Service_Login.Repositories;
 
@@ -11,12 +10,12 @@ namespace Service_Login.Controllers
     {
         private readonly IGitLoginRepository _gitLoginRepository;
         private readonly ITokenService _tokenService;
-        private readonly IUserServiceRepository _userServiceRepository;
+        private readonly IUserRepository _userRepository;
 
-        public LoginController(IGitLoginRepository gitLoginRepository, IUserServiceRepository userServiceRepository, ITokenService tokenService)
+        public LoginController(IGitLoginRepository gitLoginRepository, IUserRepository userRepository, ITokenService tokenService)
         {
             _gitLoginRepository = gitLoginRepository;
-            _userServiceRepository = userServiceRepository;
+            _userRepository = userRepository;
             _tokenService = tokenService;
         }
 
@@ -36,14 +35,14 @@ namespace Service_Login.Controllers
 
             var gitUserData = userDataResult.Value;
 
-            // Step 3: Call UserService to check or create the user
-            var userRequestDto = new UserRequestDTO();
+            // Step 3: Call check or create the user in the database
+            var userData = new User();
             
-            userRequestDto.GitId = gitUserData.id;
-            userRequestDto.Username = gitUserData.login;
-            userRequestDto.Avatar = gitUserData.avatar_url;
+            userData.gitId = gitUserData.id;
+            userData.username = gitUserData.login;
+            userData.avatar = gitUserData.avatar_url;
             
-            var userResult = await _userServiceRepository.CheckOrCreateUserAsync(userRequestDto);
+            var userResult = await _userRepository.CheckOrCreateUserAsync(userData);
             if (userResult.IsFailed)
             {
                 return BadRequest(new
@@ -52,23 +51,21 @@ namespace Service_Login.Controllers
                     Details = userResult.Errors.Select(e => e.Message) // Detailed error messages
                 });
             }
-
-            var userResultData = userResult.Value;
-
-            // Step 4: Generate the JWT token
-            var user = new User();
-
-            user.Id = userResultData.Id;
-            user.GitId = userResultData.GitId;
-            user.Username = userResultData.Username;
-            user.Avatar = userResultData.Avatar;
             
-            var jwtToken = _tokenService.GenerateToken(user); // Assuming `GenerateToken` accepts user data and returns a JWT token
+            // Step 4: Generate the JWT token
+            var user = userResult.Value;
+            
+            var jwtToken = _tokenService.GenerateToken(user);
 
             // Step 5: Return user data and JWT
             return Ok(new
             {
-                User = user,  // Return user data
+                User = new
+                {
+                    user.id,
+                    user.username,
+                    user.avatar
+                },
                 Token = jwtToken          // Return JWT token
             });
         }
