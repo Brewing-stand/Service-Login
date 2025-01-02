@@ -54,10 +54,18 @@ namespace Service_Login.Controllers
             
             // Step 4: Generate the JWT token
             var user = userResult.Value;
-            
             var jwtToken = _tokenService.GenerateToken(user);
 
-            // Step 5: Return user data and JWT
+            // Step 5: Set the token in the cookie
+            Response.Cookies.Append("jwt", jwtToken, new CookieOptions
+            {
+                HttpOnly = true,
+                Secure = true,  // Make sure the connection is HTTPS in production
+                SameSite = SameSiteMode.None, // Required for cross-origin cookies
+                Expires = DateTime.UtcNow.AddDays(1),
+            });
+            
+            // Step 6: Return user data and JWT
             return Ok(new
             {
                 User = new
@@ -66,7 +74,6 @@ namespace Service_Login.Controllers
                     user.username,
                     user.avatar
                 },
-                Token = jwtToken          // Return JWT token
             });
         }
     }
