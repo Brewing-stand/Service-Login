@@ -21,8 +21,8 @@ public class TokenService : ITokenService
     {
         var claims = new[]
         {
-            new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()), // Unique identifier for the user
-            new Claim(ClaimTypes.Name, user.Username), // Username or display name
+            new Claim(ClaimTypes.NameIdentifier, user.id.ToString()), // Unique identifier for the user
+            new Claim(ClaimTypes.Name, user.username), // username or display name
             
             new Claim(JwtRegisteredClaimNames.Iat, new DateTimeOffset().ToUnixTimeSeconds().ToString()), // Issued at claim
         };

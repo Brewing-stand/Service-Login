@@ -1,0 +1,30 @@
+Index: UnitTests/obj/rider.project.model.nuget.info
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>17334042812822323
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/UnitTests/obj/rider.project.model.nuget.info b/UnitTests/obj/rider.project.model.nuget.info
+--- a/UnitTests/obj/rider.project.model.nuget.info	
++++ b/UnitTests/obj/rider.project.model.nuget.info	
+@@ -1,1 +1,1 @@
+-17334042812822323
+\ No newline at end of file
++17355765164702654
+\ No newline at end of file
+Index: UnitTests/obj/rider.project.restore.info
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>17334042996487695
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/UnitTests/obj/rider.project.restore.info b/UnitTests/obj/rider.project.restore.info
+--- a/UnitTests/obj/rider.project.restore.info	
++++ b/UnitTests/obj/rider.project.restore.info	
+@@ -1,1 +1,1 @@
+-17334042996487695
+\ No newline at end of file
++17355765164702654
+\ No newline at end of file
