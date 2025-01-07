@@ -11,24 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec25ecf4-c020-4bbd-baef-487e7f067e64" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Service Login/Context/UserDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Service Login/.idea/shelf/Uncommitted_changes_before_Update_at_30_12_2024_17_35_[Changes]1/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Service Login/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Service Login/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service Login/Controllers/LoginController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Service Login/Controllers/LoginController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service Login/DTOs/UserRequestDTO.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service Login/DTOs/UserResponseDTO.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service Login/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Service Login/Models/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service Login/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Service Login/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service Login/Repositories/IUserServiceRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Service Login/Repositories/IUserRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service Login/Repositories/TokenService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Service Login/Repositories/TokenService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service Login/Repositories/UserServiceRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Service Login/Repositories/UserRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service Login/Service Login.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Service Login/Service Login.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service Login/Services/IUserServiceApi.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/obj/UnitTests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/obj/UnitTests.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/obj/UnitTests.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/obj/UnitTests.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/obj/UnitTests.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/obj/UnitTests.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTests/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service Login.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Service Login.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +21,37 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1736243500" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="dev" />
+                    <option name="lastUsedInstant" value="1736243499" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c73b3c6c598640c592fd3c6fa226c286e90908/17/d480902a/String.cs" root0="SKIP_HIGHLIGHTING" />
@@ -57,27 +72,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.Service Login: http.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.Service Login/Dockerfile.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Feature/UserServiceImplementation&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Service Login: http.executor": "Run",
+    "Docker.Service Login/Dockerfile.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\bramv\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\bramv\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\bramv\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\bramv\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\bramv\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\bramv\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Service Login: http">
     <configuration name="Service Login: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Service Login/Service Login.csproj" />
@@ -136,9 +151,25 @@
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="true" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
       <deployment type="dockerfile">
         <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
       </deployment>
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
@@ -155,6 +186,8 @@
       <workItem from="1733412172892" duration="32000" />
       <workItem from="1734604423225" duration="11216000" />
       <workItem from="1735574322510" duration="2048000" />
+      <workItem from="1736152898765" duration="3766000" />
+      <workItem from="1736239164852" duration="2590000" />
     </task>
     <task id="LOCAL-00001" summary="fixed some idea stuff">
       <option name="closed" value="true" />
