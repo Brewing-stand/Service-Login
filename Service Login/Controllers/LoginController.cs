@@ -76,5 +76,21 @@ namespace Service_Login.Controllers
                 },
             });
         }
+        
+        // POST: api/Login/logout
+        [HttpPost("logout")]
+        public IActionResult Logout()
+        {
+            // Set the cookie to expire immediately
+            Response.Cookies.Append("jwt", "", new CookieOptions
+            {
+                HttpOnly = true,
+                Secure = true,  // Ensure HTTPS in production
+                SameSite = SameSiteMode.None, // Required for cross-origin cookies
+                Expires = DateTime.UtcNow.AddSeconds(-1), // Expire immediately
+            });
+
+            return Ok(new { Message = "Logged out successfully." });
+        }
     }
 }
