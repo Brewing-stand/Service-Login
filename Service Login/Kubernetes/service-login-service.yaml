@@ -4,7 +4,7 @@ metadata:
   name: service-login-service
 spec:
   selector:
-    app: front-end
+    app: service-login
   ports:
     - port: 8080
       targetPort: 8080
