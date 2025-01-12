@@ -6,20 +6,20 @@ namespace Service_Login.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class LoginController : ControllerBase
+    public class AuthController : ControllerBase
     {
         private readonly IGitLoginRepository _gitLoginRepository;
         private readonly ITokenService _tokenService;
         private readonly IUserRepository _userRepository;
 
-        public LoginController(IGitLoginRepository gitLoginRepository, IUserRepository userRepository, ITokenService tokenService)
+        public AuthController(IGitLoginRepository gitLoginRepository, IUserRepository userRepository, ITokenService tokenService)
         {
             _gitLoginRepository = gitLoginRepository;
             _userRepository = userRepository;
             _tokenService = tokenService;
         }
 
-        // GET: api/Login/{code}
+        // GET: api/Auth/{code} - Login endpoint
         [HttpGet("{code}")]
         public async Task<IActionResult> Login([FromRoute] string code)
         {
@@ -37,11 +37,10 @@ namespace Service_Login.Controllers
 
             // Step 3: Call check or create the user in the database
             var userData = new User();
-            
             userData.gitId = gitUserData.id;
             userData.username = gitUserData.login;
             userData.avatar = gitUserData.avatar_url;
-            
+
             var userResult = await _userRepository.CheckOrCreateUserAsync(userData);
             if (userResult.IsFailed)
             {
@@ -51,7 +50,7 @@ namespace Service_Login.Controllers
                     Details = userResult.Errors.Select(e => e.Message) // Detailed error messages
                 });
             }
-            
+
             // Step 4: Generate the JWT token
             var user = userResult.Value;
             var jwtToken = _tokenService.GenerateToken(user);
@@ -64,7 +63,7 @@ namespace Service_Login.Controllers
                 SameSite = SameSiteMode.None, // Required for cross-origin cookies
                 Expires = DateTime.UtcNow.AddDays(1),
             });
-            
+
             // Step 6: Return user data and JWT
             return Ok(new
             {
@@ -75,6 +74,21 @@ namespace Service_Login.Controllers
                     user.avatar
                 },
             });
+        }
+
+        // POST: api/Auth/logout - Logout endpoint
+        [HttpPost("logout")]
+        public IActionResult Logout()
+        {
+            Response.Cookies.Append("jwt", "", new CookieOptions
+            {
+                Expires = DateTime.UtcNow.AddDays(-1), // Expire the cookie immediately
+                HttpOnly = true,
+                Secure = true,  // Only works if the connection is HTTPS
+                SameSite = SameSiteMode.None // Make sure it's valid for the same site
+            });
+
+            return Ok(new { message = "Logged out successfully" });
         }
     }
 }

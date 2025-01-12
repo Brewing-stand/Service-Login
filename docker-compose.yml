@@ -1,0 +1,12 @@
+﻿services:
+  service loginservicelogin:
+    image: service loginservicelogin
+    build:
+      context: .
+      dockerfile: Service Login/Dockerfile
+
+  service loginservicelogin-1:
+    image: service loginservicelogin-1
+    build:
+      context: .
+      dockerfile: Service Login/Dockerfile
