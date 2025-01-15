@@ -11,7 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec25ecf4-c020-4bbd-baef-487e7f067e64" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Service Login/Kubernetes/service-login-kong-ingress.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Service Login/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_01_2025_16_45__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Service Login/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_01_2025_16_45__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Service Login/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Service Login/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Service Login/Kubernetes/service-login-deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Service Login/Kubernetes/service-login-deployment.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,10 +20,17 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kubernetes Pod" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,6 +43,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="kubernetes" />
+                    <option name="lastUsedInstant" value="1736698037" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="master" />
                     <option name="lastUsedInstant" value="1736243500" />
@@ -71,27 +83,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.Service Login: http.executor": "Run",
-    "Docker.Service Login/Dockerfile.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "kubernetes",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.Service Login: http.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Service Login/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;kubernetes&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\bramv\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\bramv\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\bramv\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\bramv\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\bramv\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\bramv\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Service Login: http">
     <configuration name="Service Login: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Service Login/Service Login.csproj" />
@@ -187,6 +199,7 @@
       <workItem from="1735574322510" duration="2048000" />
       <workItem from="1736152898765" duration="3766000" />
       <workItem from="1736239164852" duration="2590000" />
+      <workItem from="1736769580703" duration="10857000" />
     </task>
     <task id="LOCAL-00001" summary="fixed some idea stuff">
       <option name="closed" value="true" />
@@ -216,6 +229,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="fixed some idea stuff" />
     <MESSAGE value="finished whole intergration with userapi and now returns the jwt" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished whole intergration with userapi and now returns the jwt" />
+    <MESSAGE value="kubernetes" />
+    <option name="LAST_COMMIT_MESSAGE" value="kubernetes" />
   </component>
 </project>
