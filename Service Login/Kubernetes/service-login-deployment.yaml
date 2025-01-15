@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: service-login-deployment
+  namespace: brewingstand
 spec:
   replicas: 1
   selector:
@@ -24,3 +25,14 @@ spec:
             limits:
               memory: "1Gi"
               cpu: "500m"
+          volumeMounts:
+            - name: secrets-store
+              mountPath: "/mnt/secretprovider"
+              readOnly: true
+      volumes:
+        - name: secrets-store
+          csi:
+            driver: secrets-store.csi.k8s.io
+            readOnly: true
+            volumeAttributes:
+              secretProviderClass: "service-login-secretsprovider"
