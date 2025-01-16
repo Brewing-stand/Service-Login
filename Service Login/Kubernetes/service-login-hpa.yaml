@@ -2,6 +2,7 @@ apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   name: service-login-hpa
+  namespace: brewingstand
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
@@ -15,7 +16,7 @@ spec:
         name: cpu
         target:
           type: Utilization
-          averageUtilization: 70  # Scale when CPU utilization exceeds 50%
+          averageUtilization: 70  # Scale when CPU utilization exceeds 70%
     - type: Resource
       resource:
         name: memory

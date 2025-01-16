@@ -10,10 +10,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec25ecf4-c020-4bbd-baef-487e7f067e64" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Service Login/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_01_2025_16_45__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Service Login/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_01_2025_16_45__Changes_.xml" afterDir="false" />
+    <list default="true" id="ec25ecf4-c020-4bbd-baef-487e7f067e64" name="Changes" comment="kubershitsies">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Service Login/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Service Login/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service Login/Kubernetes/service-login-deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Service Login/Kubernetes/service-login-deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service Login/Kubernetes/service-login-hpa.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Service Login/Kubernetes/service-login-hpa.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service Login/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Service Login/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,8 +66,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c73b3c6c598640c592fd3c6fa226c286e90908/17/d480902a/String.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/bramv/OneDrive/Documenten/fontys/Semester 6 (advanced software)/Personal code/back-end/Service-Login/Service Login/appsettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/bramv/OneDrive/Documenten/fontys/Semester 6 (advanced software)/Personal code/back-end/Service-Login/Service Login/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/bramv/OneDrive/Documenten/fontys/Semester 6 (advanced software)/Personal code/back-end/Service-Login/Service Login/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/bramv/OneDrive/Documenten/fontys/Semester 6 (advanced software)/Personal code/back-end/Service-Login/Service Login/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -200,6 +200,8 @@
       <workItem from="1736152898765" duration="3766000" />
       <workItem from="1736239164852" duration="2590000" />
       <workItem from="1736769580703" duration="10857000" />
+      <workItem from="1736939964527" duration="1921000" />
+      <workItem from="1737021018800" duration="4165000" />
     </task>
     <task id="LOCAL-00001" summary="fixed some idea stuff">
       <option name="closed" value="true" />
@@ -217,7 +219,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734614516718</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="kubershitsies">
+      <option name="closed" value="true" />
+      <created>1736939996992</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736939996992</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +240,7 @@
     <MESSAGE value="fixed some idea stuff" />
     <MESSAGE value="finished whole intergration with userapi and now returns the jwt" />
     <MESSAGE value="kubernetes" />
-    <option name="LAST_COMMIT_MESSAGE" value="kubernetes" />
+    <MESSAGE value="kubershitsies" />
+    <option name="LAST_COMMIT_MESSAGE" value="kubershitsies" />
   </component>
 </project>
