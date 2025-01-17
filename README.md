@@ -34,9 +34,6 @@ The Login Service manages user authentication for the Brewing Stand platform. It
 
 ## Getting started
 
-### Using Docker
-Please follow [this link](https://github.com/Nelissen-searchable-db/APP-Publish) to get the entire project running using docker
-
 ### Running locally
 Follow these steps to set up the Project Service for the Searchable DB Project.
 
